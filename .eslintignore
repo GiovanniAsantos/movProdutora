@@ -1,0 +1,7 @@
+node_modules
+public
+dist
+.next
+# *.config.js
+
+.serverless_*
