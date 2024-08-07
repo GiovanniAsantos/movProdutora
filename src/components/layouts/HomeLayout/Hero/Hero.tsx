@@ -1,7 +1,8 @@
 import { Box, Heading, Stack } from '@chakra-ui/react';
 import React from 'react';
+import "./Hero.css"
 
-interface HeroProps {
+type HeroProps = {
   title: string;
   backgroundImage: string;
 }
