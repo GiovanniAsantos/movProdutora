@@ -2,6 +2,7 @@ import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import MovLayout from '../../components/layouts/MovLayout'
 import { useNavigate } from 'react-router-dom'
+import WhatsAppButton from '../../components/WhatsappButton'
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate()
@@ -32,13 +33,10 @@ const HomePage: React.FC = () => {
             px={6}
             _hover={{
               bg: 'green.500'
-            }}
-          >
+            }}>
             Sobre nós
           </Button>
-          <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-            Learn more
-          </Button>
+          <WhatsAppButton phoneNumber="85996285377" />
         </Stack>
       </Stack>
     </MovLayout>

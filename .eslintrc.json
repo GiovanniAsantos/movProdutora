@@ -9,7 +9,8 @@
   "extends": [
     "next",
     "plugin:import/errors",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
   "plugins": [
     "@typescript-eslint/eslint-plugin",
@@ -28,7 +29,18 @@
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 150,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "tabWidth": 2,
+        "semi": false,
+        "arrowParens": "avoid",
+        "endOfLine": "auto"
+      }
+    ],
     "formatjs/no-offset": "error",
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "off",
@@ -129,7 +141,14 @@
         "ignoreMemberSort": false,
         "allowSeparatedGroups": true
       }
-    ]
+    ],
+    "no-magic-numbers": "warn",
+    "lines-between-class-members": [
+      "warn",
+      "always"
+    ],
+    "no-undef": "off",
+    "no-redeclare": "off"
   },
   "settings": {}
 }
