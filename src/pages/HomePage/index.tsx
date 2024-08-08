@@ -1,8 +1,8 @@
 import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
-import MovLayout from '../../components/layouts/MovLayout'
 import { useNavigate } from 'react-router-dom'
-import WhatsAppButton from '../../components/WhatsappButton'
+import WhatsAppButton from '@/components/WhatsappButton'
+import MovLayout from '@/components/layouts/MovLayout'
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate()

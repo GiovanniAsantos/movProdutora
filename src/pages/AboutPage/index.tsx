@@ -1,6 +1,6 @@
+import MovLayout from '@/components/layouts/MovLayout'
 import { Box, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
-import MovLayout from '../../components/layouts/MovLayout'
 
 type AboutPageProps = {}
 
