@@ -1,13 +1,12 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import './App.css'
-import HomePage from './pages/HomePage'
+import AppRoutes from './routes'
 import customTheme from './theme/theme'
-import { Global } from '@emotion/react'
 
 function App() {
   return (
     <ChakraProvider theme={customTheme}>
-      <HomePage />
+      <AppRoutes />
     </ChakraProvider>
   )
 }
