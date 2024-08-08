@@ -1,6 +1,5 @@
 import { Box, Flex, HStack, Link, IconButton, useDisclosure, Spacer } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import "./Navbar.css"
 
 const Links = ["Home", "About", "Contact", "Clients", "Events"];
 
@@ -26,8 +25,8 @@ export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box marginTop={"-4.5vh"} width={"98.9vw"} bg={"rgb(18, 18, 18)"} px={4}>
-      <Flex h={16} alignItems={"center"} justifyContent={"start"}>
+    <Box bg={"rgb(18, 18, 18)"} px={16} width="1519px">
+      <Flex h={20} alignItems={"center"} justifyContent={"space-between"}>
         <IconButton
           size={"md"}
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -35,13 +34,12 @@ export const Navbar = () => {
           display={{ md: "none" }}
           onClick={isOpen ? onClose : onOpen}
         />
-        <HStack spacing={8} alignItems={"center"}>
-          <Box><img style={{width:"50%"}} src="/Logo.jpeg" alt="" /></Box>
+        <HStack spacing={32} alignItems={"center"}>
+          <Box><img style={{width:"150px"}} src="/Logo.jpeg" alt="" /></Box>
           <Spacer />
           <HStack
             as={"nav"}
-            spacing={8}
-            marginLeft={"10vw"}
+            spacing={32}
             display={{ base: "none", md: "flex" }}
           >
             {Links.map((link) => (
