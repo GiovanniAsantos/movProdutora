@@ -1,12 +1,14 @@
-import "./App.css";
-import HomePage from "./pages/HomePage";
+import { ChakraProvider } from '@chakra-ui/react'
+import './App.css'
+import AppRoutes from './routes'
+import customTheme from './theme/theme'
 
 function App() {
   return (
-    <>
-      <HomePage />
-    </>
-  );
+    <ChakraProvider theme={customTheme}>
+      <AppRoutes />
+    </ChakraProvider>
+  )
 }
 
-export default App;
+export default App
