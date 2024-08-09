@@ -1,55 +1,50 @@
-import { Box, Flex, HStack, Link, IconButton, useDisclosure, Spacer } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Box, Flex, HStack, Link, IconButton, useDisclosure, Container, Stack } from '@chakra-ui/react'
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import logoMov from '@/assets/img/Logo.jpeg'
+import { NavLinkRouter } from '@routes/routes.dto'
+import { navLinks } from '@/routes/navLinks'
 
-const Links = ["Home", "About", "Contact", "Clients", "Events"];
-
-const NavLink = ({ children }: { children: React.ReactNode }) => (
+const NavLink = ({ children, href }: { href: string; children: React.ReactNode }) => (
   <Link
     px={2}
     py={1}
-    color={"white"}
-    textDecoration={"none"}
-    rounded={"md"}
+    color={'whiteAlpha.900'}
+    textDecoration={'none'}
+    rounded={'md'}
     _hover={{
-      textDecoration: "none",
-      bg: "gray.200",
-      color:"black"
+      textDecoration: 'none',
+      bg: 'gray.200',
+      color: 'black'
     }}
-    href={"#"}
-  >
+    href={href}>
     {children}
   </Link>
-);
+)
 
 export const Navbar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box bg={"rgb(18, 18, 18)"} px={16} width="1519px">
-      <Flex h={20} alignItems={"center"} justifyContent={"space-between"}>
+    <Box bg={'black'} px={4} overflow="hidden" position={'relative'}>
+      <Flex paddingY={6} paddingX={0} alignItems={'center'} justifyContent={'center'}>
         <IconButton
-          size={"md"}
+          size={'md'}
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-          aria-label={"Open Menu"}
-          display={{ md: "none" }}
+          aria-label={'Open Menu'}
+          display={{ md: 'none' }}
           onClick={isOpen ? onClose : onOpen}
         />
-        <HStack spacing={32} alignItems={"center"}>
-          <Box><img style={{width:"150px"}} src="/Logo.jpeg" alt="" /></Box>
-          <Spacer />
-          <HStack
-            as={"nav"}
-            spacing={32}
-            display={{ base: "none", md: "flex" }}
-          >
-            {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
-            ))}
-          </HStack>
+        <Box left={8} position={'absolute'} maxW="180px" overflow="hidden">
+          <img width="100%" height="auto" src={logoMov} alt="Logo" />
+        </Box>
+        <HStack justify={'center'} align={'center'} spacing={6} display={{ base: 'none', md: 'flex' }}>
+          {navLinks.map(link => (
+            <NavLink href={link?.href} key={link?.name}>
+              {link?.name}
+            </NavLink>
+          ))}
         </HStack>
       </Flex>
     </Box>
-  );
-};
-
-
+  )
+}
