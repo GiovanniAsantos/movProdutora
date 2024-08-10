@@ -1,20 +1,19 @@
-import { Box, Flex, HStack, Link, IconButton, useDisclosure, Container, Stack } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import logoMov from '@/assets/img/Logo.jpeg'
-import { NavLinkRouter } from '@routes/routes.dto'
+import WhatsAppButton from '@/components/WhatsappButton'
 import { navLinks } from '@/routes/navLinks'
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
+import { Box, Flex, HStack, IconButton, Link, useDisclosure } from '@chakra-ui/react'
 
 const NavLink = ({ children, href }: { href: string; children: React.ReactNode }) => (
   <Link
-    px={2}
+    px={8}
     py={1}
-    color={'whiteAlpha.900'}
+    color={'gray.50'}
     textDecoration={'none'}
-    rounded={'md'}
+    rounded={'full'}
+    fontWeight={600}
     _hover={{
-      textDecoration: 'none',
-      bg: 'gray.200',
-      color: 'black'
+      bgColor: 'rgba(144, 144, 144, 0.117)',
+      backdropFilter: 'blur(100px)'
     }}
     href={href}>
     {children}
@@ -25,7 +24,7 @@ export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box bg={'black'} px={4} overflow="hidden" position={'relative'}>
+    <Box bg={'transparent'} px={4} overflow="hidden" position={'relative'}>
       <Flex paddingY={6} paddingX={0} alignItems={'center'} justifyContent={'center'}>
         <IconButton
           size={'md'}
@@ -34,9 +33,9 @@ export const Navbar = () => {
           display={{ md: 'none' }}
           onClick={isOpen ? onClose : onOpen}
         />
-        <Box left={8} position={'absolute'} maxW="180px" overflow="hidden">
+        {/* <Box left={8} position={'absolute'} maxW="180px" overflow="hidden">
           <img width="100%" height="auto" src={logoMov} alt="Logo" />
-        </Box>
+        </Box> */}
         <HStack justify={'center'} align={'center'} spacing={6} display={{ base: 'none', md: 'flex' }}>
           {navLinks.map(link => (
             <NavLink href={link?.href} key={link?.name}>

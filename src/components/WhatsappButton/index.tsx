@@ -14,16 +14,18 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ phoneNumber, ...props }
 
   return (
     <Button
+      boxShadow={'xl'}
       rounded={'full'}
       textTransform={'none'}
       onClick={handleClick}
       colorScheme="green"
       bg="green.400"
       color="white"
-      paddingY={6}
+      paddingY={7}
+      paddingX={12}
       leftIcon={<Icon as={FaWhatsapp} boxSize="1.6em" />}
       {...props}>
-      Entre em contato
+      Envie uma mensagem
     </Button>
   )
 }

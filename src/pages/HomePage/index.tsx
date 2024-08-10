@@ -1,16 +1,18 @@
 import React from 'react'
 import MovLayout from '@/components/layouts/MovLayout'
-import bgHero from '@/assets/img/background.jpeg'
+import heroMovie from '@/assets/videos/business.mp4'
 import { Hero } from '@/components/layouts/HomeLayout/Hero/Hero'
 import { Navbar } from '@/components/layouts/HomeLayout/Navbar/Navbar'
-import { Box } from '@chakra-ui/react'
+import { Box, Stack } from '@chakra-ui/react'
 
 const HomePage: React.FC = () => {
   return (
-    <>
-      <Navbar />
-      <Hero title="Mov Produtora" backgroundImage={bgHero} />
-    </>
+    <Stack position={'relative'}>
+      <Box position={'absolute'} width={'100%'} zIndex={1000}>
+        <Navbar />
+      </Box>
+      <Hero videoUrl={heroMovie} />
+    </Stack>
   )
 }
 
