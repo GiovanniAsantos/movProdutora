@@ -1,13 +1,12 @@
 import React from 'react'
-import logoMovWhite from '@/assets/img/logo-white.png'
 import { Box, Stack, Text } from '@chakra-ui/react'
+import logoMovWhite from '@/assets/img/logo-white.png'
 import WhatsAppButton from '@/components/WhatsappButton'
+import heroMovie from '@/assets/videos/business.mp4'
 
-type HeroProps = {
-  videoUrl: string
-}
+type HeroProps = {}
 
-export const Hero: React.FC<HeroProps> = ({ videoUrl }) => {
+export const Hero: React.FC<HeroProps> = () => {
   return (
     <>
       <Box position="relative" width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
@@ -26,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ videoUrl }) => {
             left: 0,
             zIndex: -1
           }}>
-          <source src={videoUrl} type="video/mp4" />
+          <source src={heroMovie} type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
         </Box>
         <Stack
