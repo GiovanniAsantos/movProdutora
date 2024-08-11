@@ -1,7 +1,7 @@
 import { CardFeedback } from '@/components/CardFeedback'
 import { getClientFeedbacks } from '@/services/serverApi/home'
 import { ClientComments } from '@/services/serverApi/home/home.type'
-import { Box, Container, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, HStack, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import React, { useCallback, useEffect, useState } from 'react'
 
 const SectionClientFeedback: React.FC = () => {
@@ -35,9 +35,9 @@ const SectionClientFeedback: React.FC = () => {
           <Box mt={2} mb={2} width={'70px'} height={1} bgColor="gray.200" />
         </Flex>
         {error && <Text color="red.500">{error}</Text>}
-        <SimpleGrid width={'100%'} columns={{ base: 1, md: 2 }} spacing={4}>
+        <HStack maxWidth="100%" overflowX="hidden" whiteSpace="nowrap">
           {feedbacks?.map((feedback, index) => <CardFeedback key={index} feedbackData={feedback} />)}
-        </SimpleGrid>
+        </HStack>
       </Container>
     </Stack>
   )

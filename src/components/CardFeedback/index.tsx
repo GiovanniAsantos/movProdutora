@@ -1,5 +1,5 @@
-import { ClientComments, IClientFeedback } from '@/services/serverApi/home/home.type'
-import { Avatar, HStack, Text, VStack } from '@chakra-ui/react'
+import { ClientComments } from '@/services/serverApi/home/home.type'
+import { Avatar, Button, Text, VStack, Box, HStack } from '@chakra-ui/react'
 
 type ClientCardProps = {
   feedbackData: ClientComments
@@ -21,24 +21,21 @@ export const CardFeedback: React.FC<ClientCardProps> = ({ feedbackData }) => {
   const avatars = avatarDataMock[Math.floor(Math.random() * avatarDataMock.length)]
 
   return (
-    <HStack
-      sx={{ background: 'gray.900' }}
-      p={4}
-      borderWidth={1}
-      borderColor={'gray.700'}
-      borderRadius="xl"
-      spacing={4}
-      align="center"
-      bg="white"
-      shadow="md">
-      <Avatar name={userName} src={avatars} />
-
-      <VStack align="start" spacing={1} w="full">
-        <Text color={'gray.50'} fontWeight="bold">
-          {userName}
-        </Text>
-        <Text color={'gray.50'}>{comments}</Text>
-      </VStack>
-    </HStack>
+    <VStack p={6} borderWidth={1} borderColor={'gray.700'} borderRadius="3xl" spacing={4} align="center" bg="gray.900" shadow="lg" minW={'sm'}>
+      <Avatar name={userName} src={avatars} size="xl" />
+      <Text color={'gray.50'} fontWeight="bold" textAlign="center">
+        {userName}
+      </Text>
+      <Text color={'gray.50'} textAlign="center">
+        {comments}
+      </Text>
+      <Box w="full" pt={4}>
+        <HStack justify="flex-end">
+          <Button variant="link" colorScheme="blue">
+            Ler mais...
+          </Button>
+        </HStack>
+      </Box>
+    </VStack>
   )
 }
