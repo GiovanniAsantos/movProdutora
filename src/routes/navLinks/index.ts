@@ -1,4 +1,4 @@
-import { NavLinkRouter } from '../routes.dto'
+import { NavLinkRouter } from '../routes.type'
 
 export const navLinks: NavLinkRouter[] = [
   { name: 'Home', href: '/' },

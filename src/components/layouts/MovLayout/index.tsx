@@ -1,6 +1,6 @@
 import { Box, Container } from '@chakra-ui/react'
 import React from 'react'
-import { Navbar } from '../HomeLayout/Navbar/Navbar'
+import { Navbar } from '../../Navbar'
 
 interface MovLayoutProps {
   children: React.ReactNode
