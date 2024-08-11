@@ -2,8 +2,8 @@ import { extendTheme } from '@chakra-ui/react'
 
 const customTheme = extendTheme({
   fonts: {
-    heading: "'Inter', sans-serif",
-    body: "'Inter', sans-serif"
+    heading: "'Lato', sans-serif",
+    body: "'Lato', sans-serif"
   },
   styles: {
     global: {
@@ -12,7 +12,7 @@ const customTheme = extendTheme({
         width: '100%',
         margin: 0,
         padding: 0,
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "'Lato', sans-serif",
         color: 'gray.800',
         lineHeight: 'tall'
       },

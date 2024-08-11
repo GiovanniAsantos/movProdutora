@@ -40,7 +40,7 @@ export const Hero: React.FC<HeroProps> = () => {
           <img width="30%" height="auto" src={logoMovWhite} alt="Logo" />
           <Text
             textShadow={'0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 90px rgba(0, 0, 0, 0.5), 0px 0px 30px rgba(0, 0, 0, 0.5)'}
-            fontWeight={200}
+            fontWeight={400}
             textColor={'white'}
             letterSpacing={6}
             fontSize={'20px'}>
