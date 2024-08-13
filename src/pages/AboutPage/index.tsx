@@ -1,4 +1,4 @@
-import MovLayout from '@/components/layouts/MovLayout'
+import MovLayout from '@/components/Layouts/MovLayout'
 import { Box, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 

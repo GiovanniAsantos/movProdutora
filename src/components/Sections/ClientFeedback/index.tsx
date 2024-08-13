@@ -1,10 +1,10 @@
 import { CardFeedback } from '@/components/CardFeedback'
 import { getClientFeedbacks } from '@/services/serverApi/home'
 import { ClientComments } from '@/services/serverApi/home/home.type'
-import { Box, Container, Flex, Heading, HStack, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, HStack, Stack, Text } from '@chakra-ui/react'
 import React, { useCallback, useEffect, useState } from 'react'
 
-const SectionClientFeedback: React.FC = () => {
+export const ClientFeedback: React.FC = () => {
   const [feedbacks, setFeedbacks] = useState<ClientComments[]>([])
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
@@ -42,5 +42,3 @@ const SectionClientFeedback: React.FC = () => {
     </Stack>
   )
 }
-
-export default SectionClientFeedback

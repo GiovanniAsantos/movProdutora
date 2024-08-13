@@ -1,5 +1,5 @@
 import { ClientComments } from '@/services/serverApi/home/home.type'
-import { Avatar, Button, Text, VStack, Box, HStack } from '@chakra-ui/react'
+import { Avatar, Box, Text, VStack } from '@chakra-ui/react'
 
 type ClientCardProps = {
   feedbackData: ClientComments
@@ -29,13 +29,7 @@ export const CardFeedback: React.FC<ClientCardProps> = ({ feedbackData }) => {
       <Text color={'gray.50'} textAlign="center">
         {comments}
       </Text>
-      <Box w="full" pt={4}>
-        <HStack justify="flex-end">
-          <Button variant="link" colorScheme="blue">
-            Ler mais...
-          </Button>
-        </HStack>
-      </Box>
+      <Box w="full" pt={4}></Box>
     </VStack>
   )
 }
