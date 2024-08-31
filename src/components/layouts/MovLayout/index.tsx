@@ -10,7 +10,7 @@ interface MovLayoutProps {
 const MovLayout: React.FC<MovLayoutProps> = ({ children, maxWidthContainer = 'Container.xl' }) => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Container centerContent maxW={maxWidthContainer} padding={0}>
         {children}
       </Container>

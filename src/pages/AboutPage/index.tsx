@@ -1,4 +1,5 @@
 import CardProps from '@/components/cards'
+import { Navbar } from '@/components/layouts/HomeLayout/Navbar/Navbar'
 import MovLayout from '@/components/layouts/MovLayout'
 import studioPhoto from '@assets/img/studioPhoto.jpg'
 import { Box, Button, Image, SimpleGrid, Text } from '@chakra-ui/react'
@@ -10,6 +11,7 @@ type AboutPageProps = {}
 const AboutPage: React.FC<AboutPageProps> = () => {
   return (
     <MovLayout maxWidthContainer="100vw">
+      <Navbar backgroundColor={'#171717'} width={'100%'} />
       <Box display="block" backgroundColor={'#171717'} textAlign={'left'}>
         <Box width={'100%'} height={600} bgGradient="linear(to-b, transparent, #171717) !important">
           <Image src={`${studioPhoto}`} alt="Imagem de Exemplo" shadow="lg" objectFit="cover" width="100%" height="100%" />

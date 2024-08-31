@@ -9,7 +9,7 @@ type HeroProps = {}
 export const Hero: React.FC<HeroProps> = () => {
   return (
     <>
-      <Box position="relative" width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
+      <Box zIndex={1} position="relative" width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
         <Box
           as="video"
           autoPlay
