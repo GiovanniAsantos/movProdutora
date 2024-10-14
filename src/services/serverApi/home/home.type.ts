@@ -1,4 +1,4 @@
-import { IResponseApi } from '@services/serverApi'
+import { IResponseApi } from '..'
 
 export type ClientComments = {
   body: string

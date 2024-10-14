@@ -1,7 +1,7 @@
 // src/services/routes/Routes.tsx
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import routesConfig from '@/routes/routesConfig'
+import routesConfig from './routesConfig'
 
 const AppRoutes: React.FC = () => (
   <Router>

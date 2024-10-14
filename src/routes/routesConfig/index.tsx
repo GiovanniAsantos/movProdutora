@@ -1,6 +1,6 @@
-import AboutPage from '@/pages/AboutPage'
-import HomePage from '@/pages/HomePage'
-import { routerType } from '@/routes/routes.type'
+import AboutPage from '../../pages/AboutPage'
+import HomePage from '../../pages/HomePage'
+import { routerType } from '../routes.type'
 
 const routesConfig: routerType[] = [
   {

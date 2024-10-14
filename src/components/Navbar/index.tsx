@@ -1,7 +1,7 @@
-import logoWhite from '@/assets/img/logo-white.png'
-import { navLinks } from '@/routes/navLinks'
+import logoWhite from '../../assets/img/logo-white.png'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { Box, BoxProps, Flex, HStack, IconButton, Link, Spacer, useDisclosure } from '@chakra-ui/react'
+import { navLinks } from '../../routes/navLinks'
 
 const NavLink = ({ children, href }: { href: string; children: React.ReactNode }) => (
   <Link

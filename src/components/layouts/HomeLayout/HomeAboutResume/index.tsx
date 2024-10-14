@@ -1,6 +1,6 @@
 import React from 'react'
-import MovLayout from '@/components/layouts/MovLayout'
 import { Box } from '@chakra-ui/react'
+import MovLayout from '../../MovLayout'
 
 type SmallAboutProps = {}
 

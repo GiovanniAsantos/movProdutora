@@ -1,5 +1,5 @@
-import { api } from '@/services/serverApi'
-import { IResponseComments } from '@/services/serverApi/home/home.type'
+import { api } from '..'
+import { IResponseComments } from './home.type'
 
 export async function getClientFeedbacks(): Promise<IResponseComments> {
   const response = await api.get('/comments', {

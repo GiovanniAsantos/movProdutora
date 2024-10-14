@@ -1,14 +1,12 @@
-import { Hero } from '@/components/Hero'
-import { Navbar } from '@/components/Navbar'
-import { ClientFeedback } from '@/components/Sections/ClientFeedback'
-import { ContactForm } from '@/components/Sections/Contact'
-import { useContactForm } from '@/hooks/useContactForm'
 import { Box, HStack, Stack } from '@chakra-ui/react'
 import React from 'react'
-import { SmallAbout } from '@/components/layouts/HomeLayout/HomeAboutResume'
-import { Portfolio } from '@/components/layouts/HomeLayout/Portfolio/Portfolio'
-import { Contact } from '@/components/layouts/HomeLayout/Contact/Contact'
-import { Clients } from '@/components/layouts/HomeLayout/Clients/Clients'
+import { Hero } from '../../components/Hero'
+import { Clients } from '../../components/Layouts/HomeLayout/Clients/Clients'
+import { Contact } from '../../components/Layouts/HomeLayout/Contact/Contact'
+import { SmallAbout } from '../../components/Layouts/HomeLayout/HomeAboutResume'
+import { Portfolio } from '../../components/Layouts/HomeLayout/Portfolio/Portfolio'
+import { Navbar } from '../../components/Navbar'
+import { useContactForm } from '../../hooks/useContactForm'
 
 const HomePage: React.FC = () => {
   const { submitContactForm } = useContactForm()

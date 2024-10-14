@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box, Stack, Text } from '@chakra-ui/react'
-import logoMovWhite from '@/assets/img/logo-white.png'
-import WhatsAppButton from '@/components/WhatsappButton'
-import heroMovie from '@/assets/videos/business.mp4'
+import logoMovWhite from '../../assets/img/logo-white.png'
+import heroMovie from '../../assets/videos/business.mp4'
+import WhatsAppButton from '../WhatsappButton'
 
 type HeroProps = {}
 

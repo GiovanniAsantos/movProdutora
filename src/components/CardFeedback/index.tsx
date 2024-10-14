@@ -1,5 +1,5 @@
-import { ClientComments } from '@/services/serverApi/home/home.type'
 import { Avatar, Box, Text, VStack } from '@chakra-ui/react'
+import { ClientComments } from '../../services/serverApi/home/home.type'
 
 type ClientCardProps = {
   feedbackData: ClientComments

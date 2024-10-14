@@ -1,8 +1,8 @@
-import { CardFeedback } from '@/components/CardFeedback'
-import { getClientFeedbacks } from '@/services/serverApi/home'
-import { ClientComments } from '@/services/serverApi/home/home.type'
 import { Box, Container, Flex, Heading, HStack, Stack, Text } from '@chakra-ui/react'
 import React, { useCallback, useEffect, useState } from 'react'
+import { CardFeedback } from '../../../components/CardFeedback'
+import { getClientFeedbacks } from '../../../services/serverApi/home'
+import { ClientComments } from '../../../services/serverApi/home/home.type'
 
 export const ClientFeedback: React.FC = () => {
   const [feedbacks, setFeedbacks] = useState<ClientComments[]>([])
