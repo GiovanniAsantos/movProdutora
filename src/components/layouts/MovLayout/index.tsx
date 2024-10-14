@@ -4,13 +4,14 @@ import { Navbar } from '../../Navbar'
 
 interface MovLayoutProps {
   children: React.ReactNode
+  maxWidthContainer?: string
 }
 
-const MovLayout: React.FC<MovLayoutProps> = ({ children }) => {
+const MovLayout: React.FC<MovLayoutProps> = ({ children, maxWidthContainer = 'Container.xl' }) => {
   return (
     <>
-      <Navbar />
-      <Container centerContent maxW="container.xl" padding={0}>
+      {/* <Navbar /> */}
+      <Container centerContent maxW={maxWidthContainer} padding={0}>
         {children}
       </Container>
     </>
