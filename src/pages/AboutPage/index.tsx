@@ -1,6 +1,6 @@
 import CardProps from '@/components/cards'
 import { Navbar } from '@/components/layouts/HomeLayout/Navbar/Navbar'
-import MovLayout from '@/components/layouts/MovLayout'
+import MovLayout from '@/components/layouts/MovLayout/index'
 import studioPhoto from '@assets/img/studioPhoto.jpg'
 import { Box, Button, Image, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
