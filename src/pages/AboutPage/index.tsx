@@ -4,7 +4,7 @@ import React from 'react'
 import { FaInfoCircle } from 'react-icons/fa'
 import CardProps from '../../components/cards'
 import { Navbar } from '../../components/Navbar'
-import MovLayout from '../../components/layouts/MovLayout'
+import MovLayout from '../../components/Layouts/MovLayout'
 
 type AboutPageProps = {}
 

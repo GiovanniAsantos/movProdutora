@@ -3,10 +3,10 @@ import React from 'react'
 import { Hero } from '../../components/Hero'
 import { Navbar } from '../../components/Navbar'
 import { useContactForm } from '../../hooks/useContactForm'
-import { Portfolio } from '../../components/layouts/HomeLayout/Portfolio/Portfolio'
-import { Contact } from '../../components/layouts/HomeLayout/Contact/Contact'
-import { Clients } from '../../components/layouts/HomeLayout/Clients/Clients'
-import { SmallAbout } from '../../components/layouts/HomeLayout/HomeAboutResume'
+import { Clients } from '../../components/Layouts/HomeLayout/Clients/Clients'
+import { Contact } from '../../components/Layouts/HomeLayout/Contact/Contact'
+import { SmallAbout } from '../../components/Layouts/HomeLayout/HomeAboutResume'
+import { Portfolio } from '../../components/Layouts/HomeLayout/Portfolio/Portfolio'
 
 const HomePage: React.FC = () => {
   const { submitContactForm } = useContactForm()

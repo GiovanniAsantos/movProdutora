@@ -1,6 +1,6 @@
 import { Box, Button, Input, SimpleGrid, Stack, Text, Textarea } from '@chakra-ui/react'
 import React from 'react'
-import MovLayout from '../../../../components/layouts/MovLayout'
+import MovLayout from '../../../Layouts/MovLayout/'
 
 type ClientsProps = {}
 

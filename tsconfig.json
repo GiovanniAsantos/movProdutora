@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "esnext", // Use ESNext for modern features like import.meta
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -13,6 +17,5 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "."
   }
 }

@@ -29,6 +29,8 @@
     "sourceType": "module"
   },
   "rules": {
+    "import/no-unresolved": "error",
+    "import/no-duplicates": "error",
     "prettier/prettier": [
       "error",
       {
