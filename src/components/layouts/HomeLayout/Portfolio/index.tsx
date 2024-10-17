@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, SimpleGrid, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
-import MovLayout from '../../../Layouts/MovLayout/'
+import MovLayout from '../../MovLayout'
 
 type PortfolioProps = {}
 
