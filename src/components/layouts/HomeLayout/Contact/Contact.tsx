@@ -1,6 +1,6 @@
 import { Box, Button, Input, Stack, Textarea } from '@chakra-ui/react'
 import React from 'react'
-import MovLayout from '../../MovLayout'
+import MovLayout from '../../../../components/layouts/MovLayout'
 
 type ContactProps = {}
 

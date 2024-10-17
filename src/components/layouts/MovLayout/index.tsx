@@ -1,6 +1,5 @@
-import { Box, Container } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 import React from 'react'
-import { Navbar } from '../../Navbar'
 
 interface MovLayoutProps {
   children: React.ReactNode
@@ -10,7 +9,6 @@ interface MovLayoutProps {
 const MovLayout: React.FC<MovLayoutProps> = ({ children, maxWidthContainer = 'Container.xl' }) => {
   return (
     <>
-      {/* <Navbar /> */}
       <Container centerContent maxW={maxWidthContainer} padding={0}>
         {children}
       </Container>

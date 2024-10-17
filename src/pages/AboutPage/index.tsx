@@ -3,8 +3,8 @@ import { Box, Button, Image, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
 import { FaInfoCircle } from 'react-icons/fa'
 import CardProps from '../../components/cards'
-import MovLayout from '../../components/Layouts/MovLayout'
 import { Navbar } from '../../components/Navbar'
+import MovLayout from '../../components/layouts/MovLayout'
 
 type AboutPageProps = {}
 
